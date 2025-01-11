@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Room</title>
+        
+        <!-- include auth check -->
+        
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+      <script type="module" crossorigin src="/assets/main-BpE-2WnP.js"></script>
+      <link rel="modulepreload" crossorigin href="/assets/main-Do6VZ8o5.js">
+      <link rel="modulepreload" crossorigin href="/assets/en-US-CozrKnDA.js">
+      <link rel="stylesheet" crossorigin href="/assets/main-Ch4IhrPt.css">
+      <link rel="stylesheet" crossorigin href="/assets/main-BrEE9P_r.css">
+    </head>
+    <body>
+        
+        <section class="flex">
+
+            <div class="flex flex-col items-center w-16 h-screen space-y-8 bg-white">
+
+                <a href="javascript:void(0);" class="p-2 text-gray-500 transition-colors duration-200 rounded-lg hover:text-gray-600"><i class="fas fa-home"></i></a>
+                <a href="javascript:void(0);" class="p-2 text-gray-500 transition-colors duration-200 bg-blue-100 rounded-lg hover:bg-gray-100 hover:text-gray-600"><i class="fas fa-users"></i></a>
+                <a href="javascript:void(0);" class="p-2 text-gray-500 transition-colors duration-200 rounded-lg hover:text-gray-600"><i class="fas fa-chart-bar"></i></a>
+                <a href="javascript:void(0);" class="p-2 text-gray-500 transition-colors duration-200 rounded-lg hover:text-gray-600"><i class="fas fa-chart-pie"></i></a>
+                <a href="javascript:void(0);" class="p-2 text-gray-500 transition-colors duration-200 rounded-lg hover:text-gray-600"><i class="fas fa-envelope"></i></a>
+                <a href="javascript:void(0);" class="p-2 text-gray-500 transition-colors duration-200 rounded-lg hover:text-gray-600"><i class="fas fa-cogs"></i></a>
+                
+            </div>
+
+            <div class="w-64 h-screen px-2 py-8 overflow-y-auto bg-white border-l">
+
+                <h3 class="px-5 text-lg font-medium text-center text-gray-700">Chat Room</h3>
+                <p class="px-5 text-sm font-medium text-center text-gray-700">1/6</p>
+                
+
+                <div class="mt-8 space-y-5">
+                    
+                    <div class="chatrooms">
+
+                        <button type="button" id="general" class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                            <img src="/images/general.png" class="object-cover w-10 h-10 rounded-full" alt="general">
+        
+                            <div class="text-left">
+                                <h3 class="font-medium text-gray-700 capitalize text-small">General</h3>
+                                <p class="text-xs text-gray-500">public</p>
+                            </div>
+        
+                        </button>
+        
+                        <button type="button" id="information" class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                            <img src="/images/information.png" class="object-cover w-10 h-10 rounded-full" alt="infromation">
+        
+                            <div class="text-left">
+                                <h3 class="font-medium text-gray-700 capitalize text-small">Information</h3>
+                                <p class="text-xs text-gray-500">public</p>
+                            </div>
+        
+                        </button>
+        
+                        <button type="button" id="nodejs" class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                            <img src="/images/nodejs.png" class="object-cover w-10 h-10 rounded-full" alt="nodejs">
+        
+                            <div class="text-left">
+                                <h3 class="font-medium text-gray-700 capitalize text-small">Nodejs</h3>
+                                <p class="text-xs text-gray-500">public</p>
+                            </div>
+        
+                        </button>
+        
+                        <button type="button" id="reactjs" class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                            <img src="/images/reactjs.png" class="object-cover w-10 h-10 rounded-full" alt="reactjs">
+        
+                            <div class="text-left">
+                                <h3 class="font-medium text-gray-700 capitalize text-small">Reactjs</h3>
+                                <p class="text-xs text-gray-500">public</p>
+                            </div>
+        
+                        </button>
+        
+                        <button type="button" id="laravel" class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                            <img src="/images/laravel.png" class="object-cover w-10 h-10 rounded-full" alt="laravel">
+        
+                            <div class="text-left">
+                                <h3 class="font-medium text-gray-700 capitalize text-small">Laravel</h3>
+                                <p class="text-xs text-gray-500">public</p>
+                            </div>
+        
+                        </button>
+        
+                        <button type="button" id="python" class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                            <img src="/images/python.png" class="object-cover w-10 h-10 rounded-full" alt="python">
+        
+                            <div class="text-left">
+                                <h3 class="font-medium text-gray-700 capitalize text-small">Python</h3>
+                                <p class="text-xs text-gray-500">public</p>
+                            </div>
+        
+                        </button>
+
+                    </div>
+
+                    <div>
+                        <a href="./profile.html" class="block w-full py-1 text-sm text-center text-white bg-slate-500 hover:bg-slate-700">Profile</a>
+                    </div>
+                    
+                    <form class="my-3 user-form">
+                        <input type="text" name="username" id="username" class="block w-full px-4 py-2 border border-gray-300 focus:outline-none" placeholder="User Name" required />
+                        <span class="text-sm text-gray-600 msg"></span>
+                    </form>
+
+                </div>
+                
+            </div>
+
+            <div class="w-full h-screen px-5 py-8 bg-white border-l ">
+
+
+                <div class="px-4 py-3 text-blue-600 bg-slate-200">
+                    <h6 class="roomtitle">Room Title</h6>
+                </div>
+
+                <div class="mt-12 chat-container">
+                    <ul class="h-[80vh] space-y-5 overflow-y-auto chat-ul">
+
+                        <!-- <li class="px-4 py-2 rounded-lg shadow">
+                            <div class="flex justify-between">
+                                <h5 class="text-sm font-medium text-gray-600">Guest</h5>
+                                <i class="text-xs text-gray-300">19 minutes ago</i>
+                            </div>
+                            <p class="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </li>
+
+                        <li class="px-4 py-2 rounded-lg shadow">
+                            <div class="flex justify-between">
+                                <h5 class="text-sm font-medium text-gray-600">Guest</h5>
+                                <i class="text-xs text-gray-300">19 minutes ago</i>
+                            </div>
+                            <p class="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </li> -->
+
+                    </ul>
+                </div>
+
+                <div class="border-t">
+                    <form class="flex items-center my-3 chat-form" action="" method="">
+                        <input type="text" name="message" id="message" class="flex-grow px-4 py-1 border border-gray-300 text-md focus:outline-none" placeholder="Type your message" required />
+                        <button type="submit" class="flex items-center justify-center px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script> -->
+        
+    </body>
+</html>
