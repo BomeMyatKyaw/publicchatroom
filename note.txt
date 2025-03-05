@@ -150,7 +150,7 @@ import { format, compareAsc } from "date-fns";
 
 npm install @fortawesome/fontawesome-free
 
-2. import in src/main.js  or src/js/uielement.js and src/js/app.js
+2. import in src/main.js  or src/js/authsigninapp.js and src/js/app.js
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
